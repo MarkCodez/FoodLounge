@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeziiEatz"
+        tools:targetApi="31">
+        <activity
+            android:name="com.marke.FoodLounge.DessertsActivity"
+            android:exported="false"
+            android:label="Desserts"
+            android:parentActivityName="com.marke.FoodLounge.MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.marke.FoodLounge.AppetizersActivity"
+            android:exported="false"
+            android:label="Appetizers"
+            android:parentActivityName="com.marke.FoodLounge.MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.marke.FoodLounge.MainCoursesActivity"
+            android:label="Main courses"
+            android:parentActivityName="com.marke.FoodLounge.MainActivity" />
+        <activity
+            android:name="com.marke.FoodLounge.MainActivity"
+            android:exported="true"
+            android:label="Food Lounge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
